@@ -1,0 +1,18 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=text --reporter=html jasmine *.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "jasmine": "^3.1.0",
+    "nock": "^9.4.3",
+    "nyc": "^12.0.2"
+  }
+}
