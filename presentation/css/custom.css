@@ -1,0 +1,33 @@
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal .progress {
+  color: #000000;
+}
+
+.reveal .controls {
+  color: #000000;
+}
+
+.emoji-title.check,
+.emoji-title.delete {
+  font-size: 60%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+/* Seção: O que é TDD? */
+.tdd_cycle {
+  height: 60%;
+  width: 60%;
+}
+
+/* Seção: Quando e Onde é aplicável? */
+.test_pyramid {
+  height: 60%;
+  width: 60%;
+}

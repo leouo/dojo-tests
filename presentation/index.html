@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h2>🛡️</h2>
+					<h2>Test Driven Development</h2>
+					<p>Técnica de Desenvolvimento Ágil</p>
+				</section>
+				<section>
+          <section>
+            <h3>O que é TDD? <span class="emoji-title">🤔</span></h3>
+            <p>É uma técnica de desenvolvimento orientado a testes, onde os testes são feitos antes do código das funcionalidades da aplicação.</p>
+          </section>
+          <section>
+            <img class="tdd_cycle" src="img/tdd_cycle.svg" alt="">
+          </section>
+        </section>
+				<section>
+          <h3>Quais os ganhos? <span class="emoji-title">🏅</span></h3>
+          <ul>
+            <li class="fragment">Qualidade do entregável</li>
+            <li class="fragment">Documentação de código</li>
+            <li class="fragment">Garante código limpo e simples</li>
+            <li class="fragment">Feedback instantâneo</li>
+            <li class="fragment">Facilita na refatoração/manutenção</li>
+            <li class="fragment">Menos tempo de debug</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h3>Quando e Onde é aplicável? <span class="emoji-title">✍️</span></h3>
+          </section>
+          <section>
+            <h3>Teste unitário <span class="emoji-title check">✔️</span></h3>
+            <ul>
+              <li>O teste é somente sobre uma unidade do sistema.</li>
+              <li>Pode ser testado isoladamente com stubs e mocks ou com dependência de outras unidades.</li>
+              <li>Abrange todo fluxo lógico que faz parte do escopo da unidade.</li>
+              <li>O time decide o que considerar como uma unidade, levando em consideração os paradigmas de programação e tecnologias usadas.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Teste de integração <span class="emoji-title check">✔️</span></h3>
+            <ul>
+              <li>Testa a comunicação entre sistemas ou de entidades de um mesmo sistema.</li>
+              <li>Utiliza-se dados/entidades reais. O uso de mocks é feito em casos raros, onde o mock não tem uma ligação direta com o que será testado.</li>
+              <li>Por serem mais custosos, a execução pode ser realizada em momentos específicos.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Testes de aceitação & E2E <span class="emoji-title delete">❌</span></h3>
+            <ul>
+              <li>Testa se as funcionalidades correspondem com as especificações.</li>
+              <li>Comumente utiliza-se BDD para guiar os testes.</li>
+              <li>São frágeis, instáveis e custosos na execução.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Pirâmide de testes</h3>
+            <img class="test_pyramid" src="img/test_pyramid.jpg" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Ferramentas <span class="emoji-title">🛠</span></h3>
+          </section>
+          <section>
+            <h3>Testing Frameworks</h3> 
+            <p>Fornece um ambiente de execução de testes com ferramentas de linha de comando e API para ajudar a estruturar os testes.</p>
+          </section>
+          <section>
+            <h3>Assertion Libraries</h3>
+            <p>Melhora a legibilidade dos testes escritos.</p>
+          </section>
+          <section>
+            <h3>Double Libraries</h3>
+            <p>Ferramenta para trabalhar com Mocks, Stubs e Spies</p>
+          </section>
+          <section>
+            <h3>Code Coverage</h3>
+            <p>Fornece relatórios que servem como guia para teste ou possíveis refatorações.</p>
+          </section>
+          <section>
+            <h3>Test Runners</h3>
+            <p>Agrupa principais ferramentas de teste fornecendo um ambiente completo para rodar testes. <br> (Snapshot, Assertions, Friendly CLI’s feedback, Mocks)</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Vamos ver tudo isso na prática!</h3>
+          </section>
+          <section>
+            <h1>👨‍💻</h1>
+          </section>
+        </section>
+        <section>
+          <h3>Obrigado!</h3>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
